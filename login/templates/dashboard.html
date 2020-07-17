@@ -1,0 +1,6 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1>Welcome,{{user.username}}</h1>
+
+<a href="{% url 'firstpage' %}">gET YOUR FIRST RESUME</a>
+{% endblock %}

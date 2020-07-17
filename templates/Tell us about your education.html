@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Education Details</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  <div class="form-group col-12 col-sm-6">
+	<form  method="post" >
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+ <button type="submit" class="btn btn-primary" value="next/" formaction="next/"> Save & Next</button>
+
+
+   <button type="submit" class="btn btn-primary" formaction="back/">Back</button>
+  </form>
+</div>
+</body>
+</html>
